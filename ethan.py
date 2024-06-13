@@ -6,7 +6,7 @@
 
 # print(3 * 4)
 
-# print(6/3) # 2.0
+# print(6/3) # 2.0 
 
 # print(6//3) # 2
 
@@ -16,10 +16,10 @@
 
 # first select all and for windows use contrl a then control  slash for multiple line comment
 
-# Assining variables
+# Assining variables 
 
 # a = 5  # here a is variable and 5 is value
-# a = "Ethan"
+# a = "Ethan" 
 # b = "Vinodh"
 # c = "Python"
 
@@ -35,7 +35,7 @@
 # b = "Vinodh"
 # print(b)
 
-# # interger data type
+# # interger data type 
 # my_integer = 5
 # print(my_integer)
 
@@ -56,3 +56,21 @@
 # # print("your lucky number is "+str(b)) # type casting int to string (b)
 
 # print(f"your lucky number is {b}")
+
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill?"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15?"))
+people = int(input("How many people to split the bill?"))
+
+# bill_with_tip = tip/100 * bill + bill 
+
+# bill_with_tip = bill * (1 + tip/100) / people
+
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amout =round(bill_per_person, 2)
+final_amout
+print(f"Each person should pay: ${final_amout}")
+
